@@ -51,7 +51,7 @@ const Player = ({ urlParams, queryParams }) => {
         return storedVolume ? parseFloat(storedVolume) : 100;
     });
     const [playerMuted, setPlayerMuted] = React.useState(() => {
-        return localStorage.getItem('player_muted') === "true";
+        return localStorage.getItem('player_muted') === 'true';
     });
 
     const [casting, setCasting] = React.useState(() => {
